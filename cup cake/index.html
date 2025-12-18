@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tasty Cakes Sri Lanka</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="tagline">Best Cakes in Colombo</div>
+            <h1>Tasty Cakes Sri Lanka</h1>
+            <div class="delivery-info">
+                <i class="fas fa-shipping-fast"></i> Same day delivery - order before 4pm
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Introduction Section -->
+        <section class="intro">
+            <h2>Welcome to The Tasty Cakes</h2>
+            <p>We are selling cakes, bakery items and lunch. Enjoy the best Brownies and Drinks at The Tasty Cakes. Browse our collection and order your favorite now.</p>
+        </section>
+
+        <!-- Cake Showcase -->
+        <section class="cake-showcase">
+            <div class="cake-item">
+                <div class="cake-img">
+                    <i class="fas fa-birthday-cake"></i>
+                </div>
+                <div class="cake-info">
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich, moist chocolate cake with creamy frosting</p>
+                    <div class="price">From Rs. 1200</div>
+                </div>
+            </div>
+            
+            <div class="cake-item">
+                <div class="cake-img">
+                    <i class="fas fa-cookie"></i>
+                </div>
+                <div class="cake-info">
+                    <h3>Brownies</h3>
+                    <p>Delicious fudgy brownies in 100g packs</p>
+                    <div class="price">Rs. 50</div>
+                </div>
+            </div>
+            
+            <div class="cake-item">
+                <div class="cake-img">
+                    <i class="fas fa-cheese"></i>
+                </div>
+                <div class="cake-info">
+                    <h3>Cheese Cake</h3>
+                    <p>Creamy cheese cake with berry topping</p>
+                    <div class="price">From Rs. 1500</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Price List Section -->
+        <section class="price-list">
+            <h2>Price List</h2>
+            <table id="price-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    <!-- Table rows will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+        
+        <!-- Special Offers Section -->
+        <section class="special-offers">
+            <h2>Special Offers</h2>
+            <div class="offers-container">
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3>First Order Discount</h3>
+                    <p>Get 10% off on your first order with code: TASTY10</p>
+                    <button class="offer-btn" data-offer="first-order">Claim Offer</button>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                    <h3>Birthday Special</h3>
+                    <p>Free customization on birthday cakes ordered 3 days in advance</p>
+                    <button class="offer-btn" data-offer="birthday">Learn More</button>
+                </div>
+                
+                <div class="offer-card">
+                    <div class="offer-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Bulk Orders</h3>
+                    <p>15% discount on orders above Rs. 5000</p>
+                    <button class="offer-btn" data-offer="bulk">Get Quote</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> 123 Cake Street, Colombo, Sri Lanka</p>
+                <p><i class="fas fa-phone"></i> Phone: +94 11 234 5678</p>
+                <p><i class="fas fa-envelope"></i> Email: info@tastycakes.lk</p>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2022. Tasty Cakes Sri Lanka.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

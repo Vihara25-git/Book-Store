@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #fff9f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #8b4513, #a0522d);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.delivery-info {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 30px;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.intro h2 {
+    color: #8b4513;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: #555;
+}
+
+/* Cake Showcase */
+.cake-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.cake-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.cake-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cake-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cake-img {
+    height: 200px;
+    background-color: #f5e6d3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #8b4513;
+}
+
+.cake-info {
+    padding: 20px;
+}
+
+.cake-info h3 {
+    color: #8b4513;
+    margin-bottom: 10px;
+}
+
+.cake-info p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: #8b4513;
+    font-size: 1.2rem;
+}
+
+/* Price List Section */
+.price-list {
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 50px 0;
+}
+
+.price-list h2 {
+    text-align: center;
+    color: #8b4513;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+th {
+    background-color: #8b4513;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f5f0;
+}
+
+tr {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+tr:hover {
+    background-color: #f5e6d3;
+    transform: scale(1.01);
+}
+
+/* Special Offers Section */
+.special-offers {
+    margin: 60px 0;
+}
+
+.special-offers h2 {
+    text-align: center;
+    color: #8b4513;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.offers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.offer-card {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+}
+
+.offer-icon {
+    font-size: 2.5rem;
+    color: #8b4513;
+    margin-bottom: 15px;
+}
+
+.offer-card h3 {
+    color: #8b4513;
+    margin-bottom: 15px;
+}
+
+.offer-card p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.offer-btn {
+    background-color: #8b4513;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.offer-btn:hover {
+    background-color: #a0522d;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #f5e6d3;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.copyright {
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+/* Notification Styles */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .intro h2 {
+        font-size: 1.8rem;
+    }
+    
+    .price-list {
+        padding: 20px;
+    }
+    
+    th, td {
+        padding: 10px;
+    }
+    
+    .offers-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .offer-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .delivery-info {
+        font-size: 0.9rem;
+    }
+    
+    .intro p {
+        font-size: 1rem;
+    }
+    
+    .cake-showcase {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cake-item {
+        width: 100%;
+        max-width: 300px;
+    }
+}
